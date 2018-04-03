@@ -24,3 +24,19 @@ C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\QLSV\ThucTapCSDL\QuanLySinhVien\Qua
 C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\QLSV\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.GiaoVien.frmThemGiaoVien.resources
 C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\QLSV\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.SinhVien.frmThemSinhVien.resources
 C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\QLSV\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.KetQuaHocTap.frmKetQuaHocTap.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojResolveAssemblyReference.cache
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.frmLogin.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.frmMain.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.GiaoVien.frmGiaoVien.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.GiaoVien.frmThemGiaoVien.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.KetQuaHocTap.frmKetQuaHocTap.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.LopHocPhan.frmLopHocPhan.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.SinhVien.frmSinhVien.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.SinhVien.frmThemSinhVien.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
