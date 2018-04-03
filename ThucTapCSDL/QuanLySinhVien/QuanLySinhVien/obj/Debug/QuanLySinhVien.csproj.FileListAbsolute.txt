@@ -35,8 +35,8 @@ D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLyS
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.GiaoVien.frmGiaoVien.resources
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.GiaoVien.frmThemGiaoVien.resources
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.KetQuaHocTap.frmKetQuaHocTap.resources
-D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.LopHocPhan.frmLopHocPhan.resources
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.SinhVien.frmSinhVien.resources
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.SinhVien.frmThemSinhVien.resources
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmLopHocPhann.resources

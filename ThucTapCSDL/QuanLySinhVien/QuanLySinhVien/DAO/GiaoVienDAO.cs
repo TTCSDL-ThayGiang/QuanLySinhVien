@@ -42,5 +42,21 @@ namespace QuanLySinhVien.DAO
 
             return list;
         }
+
+        public DTO.GiaoVien GetGiaoVienByID(string id)
+        {
+            DTO.GiaoVien giaovien = null;
+
+            string query = string.Format("SELECT * FROM dbo.Giao_vien WHERE Ma_giao_vien= '{0}'", id);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                giaovien = new DTO.GiaoVien(item);
+                break;
+            }
+
+            return giaovien;
+        }
     }
 }

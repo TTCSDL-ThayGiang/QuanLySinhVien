@@ -142,7 +142,7 @@ namespace QuanLySinhVien
 
         private void lớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmLopHocPhan f = new LopHocPhan.frmLopHocPhan();
+            QuanLySinhVien.UI.frmLopHocPhann f = new UI.frmLopHocPhann();
             f.ShowDialog();
         }
     }

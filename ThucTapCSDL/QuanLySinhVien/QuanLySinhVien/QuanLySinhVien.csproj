@@ -53,11 +53,23 @@
     <Compile Include="DTO\GiaoVien.cs" />
     <Compile Include="DTO\HocPhan.cs" />
     <Compile Include="DTO\LopHocPhan.cs" />
+    <Compile Include="UI\frmHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmHocPhan.Designer.cs">
+      <DependentUpon>frmHocPhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLopHocPhann.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLopHocPhann.Designer.cs">
+      <DependentUpon>frmLopHocPhann.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmMain.cs">
       <SubType>Form</SubType>
@@ -83,12 +95,6 @@
     <Compile Include="UI\KetQuaHocTap\frmKetQuaHocTap.Designer.cs">
       <DependentUpon>frmKetQuaHocTap.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\frmLopHocPhan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\frmLopHocPhan.Designer.cs">
-      <DependentUpon>frmLopHocPhan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\SinhVien\frmSinhVien.cs">
@@ -103,8 +109,14 @@
     <Compile Include="UI\SinhVien\frmThemSinhVien.Designer.cs">
       <DependentUpon>frmThemSinhVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\frmHocPhan.resx">
+      <DependentUpon>frmHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLopHocPhann.resx">
+      <DependentUpon>frmLopHocPhann.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -117,9 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\KetQuaHocTap\frmKetQuaHocTap.resx">
       <DependentUpon>frmKetQuaHocTap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmLopHocPhan.resx">
-      <DependentUpon>frmLopHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
