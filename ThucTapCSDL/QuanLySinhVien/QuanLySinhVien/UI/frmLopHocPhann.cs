@@ -14,6 +14,7 @@ namespace QuanLySinhVien.UI
 {
     public partial class frmLopHocPhann : Form
     {
+
         public frmLopHocPhann()
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace QuanLySinhVien.UI
         }
         private void DataBinding()
         {
+            
             txtMalop.DataBindings.Add(new Binding("Text", dgvLopHocPhan.DataSource, "Malophocphan", true, DataSourceUpdateMode.Never));
             txtHinhThucThi.DataBindings.Add(new Binding("Text", dgvLopHocPhan.DataSource, "Hinhthucthi", true, DataSourceUpdateMode.Never));
             txtMaxSV.DataBindings.Add(new Binding("Text", dgvLopHocPhan.DataSource, "Sosinhvientoida", true, DataSourceUpdateMode.Never));
@@ -34,7 +36,7 @@ namespace QuanLySinhVien.UI
             dtpNgayThi.DataBindings.Add(new Binding("Value", dgvLopHocPhan.DataSource, "Ngaythi", true, DataSourceUpdateMode.Never));
             dtpNgayThi.Format = DateTimePickerFormat.Custom;
             dtpNgayThi.CustomFormat = "MM/dd/yyyy";
-           
+
         }
 
 
@@ -47,6 +49,15 @@ namespace QuanLySinhVien.UI
 
         private void LoadDataIntoCombobox()
         {
+            List<NamHoc> listNamHoc = NamhocDAO.Instance.GetListNamHoc();
+            cboNamHoc.DataSource = listNamHoc;
+            cboNamHoc.DisplayMember = "Tennamhoc";
+
+            int id = (cboNamHoc.SelectedItem as NamHoc).MaNamHoc;
+            List<Kyhoc> listKyHoc = KyHocDAO.Instance.GetListKyHocByNamHocid(id);
+            cboKyHoc.DataSource = listKyHoc;
+            cboKyHoc.DisplayMember = "Tenkyhoc";
+
             List<HocPhan> listHocPhan = HocPhanDAO.Instance.GetListHocPhan();
             cboTenHocPhan.DataSource = listHocPhan;
             cboTenHocPhan.DisplayMember = "TenHocPhan";
@@ -54,8 +65,9 @@ namespace QuanLySinhVien.UI
             List<DTO.GiaoVien> listGiaoVien = GiaoVienDAO.Instance.GetListGiaoVien();
             cboTenGiaoVien.DataSource = listGiaoVien;
             cboTenGiaoVien.DisplayMember = "TenGiaoVien";
+            
         }
-
+               
         private string CheckChuoi(string Str)
         {
             string[] arr = Str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -175,11 +187,21 @@ namespace QuanLySinhVien.UI
         {
 
         }
-        
+
+        private void cboNamHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
 
         #endregion
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmReportLopHocPhan f = new frmReportLopHocPhan();
+            f.ShowDialog();
+        }
 
+        
     }
 }

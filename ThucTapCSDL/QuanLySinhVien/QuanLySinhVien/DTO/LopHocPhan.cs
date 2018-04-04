@@ -17,6 +17,8 @@ namespace QuanLySinhVien.DTO
         private string giangDuong;
         private DateTime? ngayThi;
         private string hinhThucThi;
+        private string tenNamHoc;
+        private string tenHocKy;
 
         public LopHocPhan(DataRow row)
         {
@@ -30,6 +32,8 @@ namespace QuanLySinhVien.DTO
             var NgayThiTemp = row["Ngay_thi"];
             if(NgayThiTemp.ToString()!="")
                 this.NgayThi = (DateTime?)NgayThiTemp;
+            this.TenNamHoc = (string)row["TenNamhoc"];
+            this.TenHocKy = (string)row["tenhocky"];
         }   
 
         public string MaLopHocPhan
@@ -133,6 +137,32 @@ namespace QuanLySinhVien.DTO
             set
             {
                 hinhThucThi = value;
+            }
+        }
+
+        public string TenNamHoc
+        {
+            get
+            {
+                return tenNamHoc;
+            }
+
+            set
+            {
+                tenNamHoc = value;
+            }
+        }
+
+        public string TenHocKy
+        {
+            get
+            {
+                return tenHocKy;
+            }
+
+            set
+            {
+                tenHocKy = value;
             }
         }
     }

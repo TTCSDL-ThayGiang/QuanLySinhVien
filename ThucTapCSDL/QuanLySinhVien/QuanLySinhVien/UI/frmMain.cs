@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QuanLySinhVien.UI;
 
 namespace QuanLySinhVien
 {
@@ -101,6 +102,9 @@ namespace QuanLySinhVien
             return check;
         }
 
+
+        #region Event
+
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -144,6 +148,19 @@ namespace QuanLySinhVien
         {
             QuanLySinhVien.UI.frmLopHocPhann f = new UI.frmLopHocPhann();
             f.ShowDialog();
+        }
+
+        private void họcPhầnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHocPhan f = new frmHocPhan();
+            f.ShowDialog();
+        }
+
+        #endregion
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

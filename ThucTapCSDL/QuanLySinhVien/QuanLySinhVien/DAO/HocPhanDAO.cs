@@ -57,6 +57,20 @@ namespace QuanLySinhVien.DAO
             return hocphan;
         }
 
-        
+        public List<HocPhan> SeachHocPhanByName(string name)
+        {
+            List<HocPhan> list = new List<HocPhan>();
+
+            string query = string.Format("SELECT * FROM dbo.Hoc_phan WHERE dbo.fuConvertToUnsign1(Ten_hoc_phan) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", name);
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                HocPhan hocphan = new HocPhan(item);
+                list.Add(hocphan);
+            }
+            return list;
+        }
     }
 }
