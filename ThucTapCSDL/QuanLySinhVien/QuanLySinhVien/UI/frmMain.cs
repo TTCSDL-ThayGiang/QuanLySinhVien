@@ -156,11 +156,41 @@ namespace QuanLySinhVien
             f.ShowDialog();
         }
 
-        #endregion
-
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
+
+        private void báoCáoLớpHọcPhầnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReportLopHocPhan f = new frmReportLopHocPhan();
+            f.ShowDialog();
+        }
+
+        private void báoCáoHọcPhầnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReportHocPhan f = new frmReportHocPhan();
+            f.ShowDialog();
+        }
+
+        private void báoCáoKếtQuảHọcTậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void báoCáoSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoSinhVien f = new frmBaoCaoSinhVien();
+            f.ShowDialog();
+        }
+
+        private void báoCáoGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRePortGiaoVien f = new frmRePortGiaoVien();
+            f.ShowDialog();
+        }
+        #endregion
+
+
     }
 }

@@ -65,6 +65,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Quan_ly_sinh_vienDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Quan_ly_sinh_vienDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quan_ly_sinh_vienDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_ly_sinh_vienDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quan_ly_sinh_vienDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_ly_sinh_vienDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quan_ly_sinh_vienDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBaoCaoSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBaoCaoSinhVien.Designer.cs">
+      <DependentUpon>frmBaoCaoSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\frmChildLopHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +103,18 @@
     </Compile>
     <Compile Include="UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmRePortGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmRePortGiaoVien.Designer.cs">
+      <DependentUpon>frmRePortGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmReportHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmReportHocPhan.Designer.cs">
+      <DependentUpon>frmReportHocPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmLopHocPhann.cs">
       <SubType>Form</SubType>
@@ -133,6 +166,9 @@
     <Compile Include="UI\SinhVien\frmThemSinhVien.Designer.cs">
       <DependentUpon>frmThemSinhVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\frmBaoCaoSinhVien.resx">
+      <DependentUpon>frmBaoCaoSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmChildLopHocPhan.resx">
       <DependentUpon>frmChildLopHocPhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmRePortGiaoVien.resx">
+      <DependentUpon>frmRePortGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmReportHocPhan.resx">
+      <DependentUpon>frmReportHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmLopHocPhann.resx">
       <DependentUpon>frmLopHocPhann.cs</DependentUpon>
@@ -170,6 +212,9 @@
       <DependentUpon>frmReportLopHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Report1.rdlc" />
+    <EmbeddedResource Include="UI\Report2.rdlc" />
+    <EmbeddedResource Include="UI\Report3.rdlc" />
+    <EmbeddedResource Include="UI\Report4.rdlc" />
     <EmbeddedResource Include="UI\SinhVien\frmSinhVien.resx">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +240,39 @@
     </None>
     <None Include="Quan_ly_sinh_vienDataSet.xss">
       <DependentUpon>Quan_ly_sinh_vienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet1.xsc">
+      <DependentUpon>Quan_ly_sinh_vienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Quan_ly_sinh_vienDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet1.xss">
+      <DependentUpon>Quan_ly_sinh_vienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet2.xsc">
+      <DependentUpon>Quan_ly_sinh_vienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Quan_ly_sinh_vienDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet2.xss">
+      <DependentUpon>Quan_ly_sinh_vienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet3.xsc">
+      <DependentUpon>Quan_ly_sinh_vienDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Quan_ly_sinh_vienDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quan_ly_sinh_vienDataSet3.xss">
+      <DependentUpon>Quan_ly_sinh_vienDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
