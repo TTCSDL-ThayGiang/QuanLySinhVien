@@ -154,7 +154,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.BindingSource dayladatasetBindingSource;
+
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource getLopHocPhanByNamHocIDAndHocKyIDBindingSource;

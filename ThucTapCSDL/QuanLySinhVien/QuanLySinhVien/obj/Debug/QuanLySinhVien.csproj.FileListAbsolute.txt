@@ -57,3 +57,6 @@ D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLyS
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\RdlCompile.cache
 D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\RdlCompile.compiled
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmReportHocPhan.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmBaoCaoSinhVien.resources
+D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmRePortGiaoVien.resources

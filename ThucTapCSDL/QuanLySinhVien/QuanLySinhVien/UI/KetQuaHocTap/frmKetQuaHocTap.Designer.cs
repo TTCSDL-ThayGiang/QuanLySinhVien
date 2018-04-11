@@ -30,19 +30,17 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMaSinhVien = new System.Windows.Forms.TextBox();
             this.btnXemKetQua = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Hoc_ky = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nam_hoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +54,9 @@
             this.Column3,
             this.Column5,
             this.Column6,
-            this.Column7});
+            this.Column7,
+            this.Hoc_ky,
+            this.Nam_hoc});
             this.dataGridView1.Location = new System.Drawing.Point(6, 125);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(753, 331);
@@ -73,42 +73,6 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Kết quả học tập";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(431, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Học kỳ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(295, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 16;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(478, 19);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(239, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Năm học";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -124,7 +88,7 @@
             this.txtMaSinhVien.Name = "txtMaSinhVien";
             this.txtMaSinhVien.Size = new System.Drawing.Size(123, 20);
             this.txtMaSinhVien.TabIndex = 20;
-            this.txtMaSinhVien.Text = "151501";
+            this.txtMaSinhVien.Text = "sv1";
             // 
             // btnXemKetQua
             // 
@@ -135,6 +99,18 @@
             this.btnXemKetQua.Text = "Xem kết quả";
             this.btnXemKetQua.UseVisualStyleBackColor = true;
             this.btnXemKetQua.Click += new System.EventHandler(this.btnXemKetQua_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtMaSinhVien);
+            this.groupBox1.Controls.Add(this.btnXemKetQua);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 43);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(918, 462);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
             // 
             // Column2
             // 
@@ -166,21 +142,17 @@
             this.Column7.HeaderText = "Điểm cuối kỳ";
             this.Column7.Name = "Column7";
             // 
-            // groupBox1
+            // Hoc_ky
             // 
-            this.groupBox1.Controls.Add(this.txtMaSinhVien);
-            this.groupBox1.Controls.Add(this.btnXemKetQua);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 43);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(771, 462);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
+            this.Hoc_ky.DataPropertyName = "Ten_hoc_ky";
+            this.Hoc_ky.HeaderText = "Hoc ky";
+            this.Hoc_ky.Name = "Hoc_ky";
+            // 
+            // Nam_hoc
+            // 
+            this.Nam_hoc.DataPropertyName = "Nam_hoc";
+            this.Nam_hoc.HeaderText = "nam hoc";
+            this.Nam_hoc.Name = "Nam_hoc";
             // 
             // frmKetQuaHocTap
             // 
@@ -205,18 +177,16 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMaSinhVien;
         private System.Windows.Forms.Button btnXemKetQua;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hoc_ky;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nam_hoc;
     }
 }
