@@ -20,7 +20,8 @@ namespace QuanLySinhVien.KetQuaHocTap
         public static SqlConnection con;
         private void connect()
         {
-            String cn = "Data Source=DESKTOP-TRGG2QC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";//;Integrated Security = false
+            //@"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true"
+            String cn = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";//;Integrated Security = false
 
             con = new SqlConnection(cn);
             con.Open();
@@ -60,7 +61,7 @@ namespace QuanLySinhVien.KetQuaHocTap
 
         private void btnXemKetQua_Click(object sender, EventArgs e)
         {
-            String sqlSELECT = "select a.Ma_hoc_phan,a.Ten_hoc_phan,a.Ten_hoc_ky,a.Nam_hoc,b.Diem_chuyen_can,b.Diem_thuong_xuyen,b.Diem_cuoi_ky from (select c.Ma_hoc_phan,c.Ten_hoc_phan, d.Ten_hoc_ky,d.Nam_hoc from Hoc_phan as c,Hoc_ky as d where c.Ma_hoc_ky=d.Ma_hoc_ky) as a, Bang_diem as b where a.Ma_hoc_phan=b.Ma_hoc_phan and b.Ma_sinh_vien = N'" + txtMaSinhVien.Text + "'";
+            String sqlSELECT = "select a.Ma_hoc_phan,a.Ten_hoc_phan,a.Ten_hoc_ky,a.Nam_hoc,a.So_tin_chi,b.Diem_chuyen_can,b.Diem_thuong_xuyen,b.Diem_cuoi_ky from (select c.Ma_hoc_phan,c.Ten_hoc_phan,c.So_tin_chi, d.Ten_hoc_ky,d.Nam_hoc from Hoc_phan as c,Hoc_ky as d where c.Ma_hoc_ky=d.Ma_hoc_ky) as a, Bang_diem as b where a.Ma_hoc_phan=b.Ma_hoc_phan and b.Ma_sinh_vien = N'" + txtMaSinhVien.Text + "'";
             SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong SQL
             SqlDataAdapter da = new SqlDataAdapter(com); //vận chuyển dữ liệu
             DataTable dt = new DataTable();//tạo 1 bảng ảo

@@ -31,7 +31,7 @@ namespace QuanLySinhVien.DAO
         {
             DataTable data = new DataTable();
 
-            string connectionStr = "Data Source=DESKTOP-TRGG2QC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";
+            string connectionStr = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";
 
             SqlConnection connection = new SqlConnection(connectionStr);
 
@@ -64,7 +64,7 @@ namespace QuanLySinhVien.DAO
         {
             int data = 0;
 
-            string connectionStr = "Data Source=DESKTOP-TRGG2QC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";
+            string connectionStr = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";
 
             SqlConnection connection = new SqlConnection(connectionStr);
 
@@ -98,7 +98,7 @@ namespace QuanLySinhVien.DAO
         public object ExcuteScala(string query, object[] paramater = null)
         {
             object data = 0;
-            string connectionStr = "Data Source=DESKTOP-TRGG2QC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";
+            string connectionStr = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";
 
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {

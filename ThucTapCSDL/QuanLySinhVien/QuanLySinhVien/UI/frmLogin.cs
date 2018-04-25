@@ -21,7 +21,8 @@ namespace QuanLySinhVien
         }
         private void connect()
         {
-            String cn = "Data Source=DESKTOP-TRGG2QC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";//;Integrated Security = false
+            //@"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true"
+            String cn = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";//;Integrated Security = false
             con = new SqlConnection(cn);
             con.Open();
         }
