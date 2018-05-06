@@ -96,3 +96,6 @@ D:\##TaiLieuLapTrinh\#ME\#Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLyS
 C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmBaoCaoSinhVien.resources
 C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmRePortGiaoVien.resources
 C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.frmReportHocPhan.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.KetQuaHocTap.frmDiem.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.KetQuaHocTap.frmThemDiem.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\ThucTapCSDL\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.UI.SinhVien.frmThongTin.resources

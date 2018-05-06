@@ -140,6 +140,12 @@
     <Compile Include="UI\GiaoVien\frmThemGiaoVien.Designer.cs">
       <DependentUpon>frmThemGiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\KetQuaHocTap\frmDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KetQuaHocTap\frmDiem.Designer.cs">
+      <DependentUpon>frmDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\KetQuaHocTap\frmKetQuaHocTap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,12 @@
     <Compile Include="UI\frmReportLopHocPhan.Designer.cs">
       <DependentUpon>frmReportLopHocPhan.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\KetQuaHocTap\frmThemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\KetQuaHocTap\frmThemDiem.Designer.cs">
+      <DependentUpon>frmThemDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SinhVien\frmSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,12 @@
     </Compile>
     <Compile Include="UI\SinhVien\frmThemSinhVien.Designer.cs">
       <DependentUpon>frmThemSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SinhVien\frmThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SinhVien\frmThongTin.Designer.cs">
+      <DependentUpon>frmThongTin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UI\frmBaoCaoSinhVien.resx">
       <DependentUpon>frmBaoCaoSinhVien.cs</DependentUpon>
@@ -196,6 +214,9 @@
     <EmbeddedResource Include="UI\GiaoVien\frmThemGiaoVien.resx">
       <DependentUpon>frmThemGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\KetQuaHocTap\frmDiem.resx">
+      <DependentUpon>frmDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\KetQuaHocTap\frmKetQuaHocTap.resx">
       <DependentUpon>frmKetQuaHocTap.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,9 +228,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UI\frmReportLopHocPhan.resx">
       <DependentUpon>frmReportLopHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KetQuaHocTap\frmThemDiem.resx">
+      <DependentUpon>frmThemDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Report1.rdlc" />
     <EmbeddedResource Include="UI\Report2.rdlc" />
@@ -220,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SinhVien\frmThemSinhVien.resx">
       <DependentUpon>frmThemSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SinhVien\frmThongTin.resx">
+      <DependentUpon>frmThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,7 +306,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UI\Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoHV.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

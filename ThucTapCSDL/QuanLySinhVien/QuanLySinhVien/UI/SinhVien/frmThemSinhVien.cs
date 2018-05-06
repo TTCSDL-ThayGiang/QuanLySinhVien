@@ -85,8 +85,6 @@ namespace QuanLySinhVien.SinhVien
                 getdata();
                 MessageBox.Show("Thêm mới thành công ");
                 this.Close();
-                frmSinhVien frmsinhvien = new frmSinhVien();
-                frmsinhvien.ShowDialog();
             }
         }
     }

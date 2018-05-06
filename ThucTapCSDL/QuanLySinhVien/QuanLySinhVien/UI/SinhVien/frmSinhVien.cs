@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QuanLySinhVien.UI.SinhVien;
 
 namespace QuanLySinhVien.SinhVien
 {
@@ -97,6 +98,16 @@ namespace QuanLySinhVien.SinhVien
             DataTable dt = new DataTable();//tạo 1 bảng ảo
             da.Fill(dt); //đổ dữ liệu vào bảng ảo
             dataGridView1.DataSource = dt; // đổ dữ liệu vào dG
+        }
+
+        private void btnChiTiet_Click(object sender, EventArgs e)
+        {
+            string chitiet = "create view chitiet_sv as select * from Sinh_vien where Ma_sinh_vien = '"+txtMaSinhVien.Text+"'";
+            //insert into chitiet_sv values ('"+txtMaSinhVien.Text+"','" + txtHoTen.Text+"','" + txtNgaySinh.Text+ "','" + cbbGioiTinh.Text+"','" + txtDiaChi.Text+ "','" + txtMaLop.Text+"')
+            SqlCommand com = new SqlCommand(chitiet, con);
+            com.ExecuteNonQuery();
+            frmThongTin frmthongtin = new frmThongTin();
+            frmthongtin.ShowDialog();
         }
     }
 }

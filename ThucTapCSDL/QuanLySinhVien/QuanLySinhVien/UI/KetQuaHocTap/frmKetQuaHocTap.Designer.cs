@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtMaSinhVien = new System.Windows.Forms.TextBox();
-            this.btnXemKetQua = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +37,12 @@
             this.Hoc_ky = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nam_hoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.So_tin_chi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtMaSinhVien = new System.Windows.Forms.TextBox();
+            this.btnXemKetQua = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -67,55 +68,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(892, 393);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(345, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 31);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Kết quả học tập";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Mã sinh viên";
-            // 
-            // txtMaSinhVien
-            // 
-            this.txtMaSinhVien.Location = new System.Drawing.Point(93, 19);
-            this.txtMaSinhVien.Name = "txtMaSinhVien";
-            this.txtMaSinhVien.Size = new System.Drawing.Size(179, 20);
-            this.txtMaSinhVien.TabIndex = 20;
-            this.txtMaSinhVien.Text = "sv1";
-            // 
-            // btnXemKetQua
-            // 
-            this.btnXemKetQua.Location = new System.Drawing.Point(642, 17);
-            this.btnXemKetQua.Name = "btnXemKetQua";
-            this.btnXemKetQua.Size = new System.Drawing.Size(75, 23);
-            this.btnXemKetQua.TabIndex = 21;
-            this.btnXemKetQua.Text = "Xem kết quả";
-            this.btnXemKetQua.UseVisualStyleBackColor = true;
-            this.btnXemKetQua.Click += new System.EventHandler(this.btnXemKetQua_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtMaSinhVien);
-            this.groupBox1.Controls.Add(this.btnXemKetQua);
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 43);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(918, 462);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
             // 
             // Column2
             // 
@@ -173,6 +125,65 @@
             this.So_tin_chi.Name = "So_tin_chi";
             this.So_tin_chi.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(345, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(193, 31);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Kết quả học tập";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Mã sinh viên";
+            // 
+            // txtMaSinhVien
+            // 
+            this.txtMaSinhVien.Location = new System.Drawing.Point(93, 19);
+            this.txtMaSinhVien.Name = "txtMaSinhVien";
+            this.txtMaSinhVien.Size = new System.Drawing.Size(179, 20);
+            this.txtMaSinhVien.TabIndex = 20;
+            // 
+            // btnXemKetQua
+            // 
+            this.btnXemKetQua.Location = new System.Drawing.Point(486, 19);
+            this.btnXemKetQua.Name = "btnXemKetQua";
+            this.btnXemKetQua.Size = new System.Drawing.Size(75, 23);
+            this.btnXemKetQua.TabIndex = 21;
+            this.btnXemKetQua.Text = "Xem kết quả";
+            this.btnXemKetQua.UseVisualStyleBackColor = true;
+            this.btnXemKetQua.Click += new System.EventHandler(this.btnXemKetQua_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.txtMaSinhVien);
+            this.groupBox1.Controls.Add(this.btnXemKetQua);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 43);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(918, 462);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(680, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Cập nhật điểm";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmKetQuaHocTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,5 +218,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Hoc_ky;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nam_hoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn So_tin_chi;
+        private System.Windows.Forms.Button button1;
     }
 }

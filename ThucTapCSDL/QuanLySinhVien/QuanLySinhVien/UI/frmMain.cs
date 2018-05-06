@@ -122,21 +122,12 @@ namespace QuanLySinhVien
 
         private void giáoViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (checkper("ADMIN") == true)
-            {
-                GiaoVien.frmGiaoVien frmgiaovien = new GiaoVien.frmGiaoVien();
-                frmgiaovien.ShowDialog();
-            }
-            else
-            {
-                giáoViênToolStripMenuItem.Enabled = false;
-            }
+            
         }
 
         private void sinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SinhVien.frmSinhVien frmsinhvien = new SinhVien.frmSinhVien();
-            frmsinhvien.ShowDialog();
+            
         }
 
         private void điểmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -147,14 +138,12 @@ namespace QuanLySinhVien
 
         private void lớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLySinhVien.UI.frmLopHocPhann f = new UI.frmLopHocPhann();
-            f.ShowDialog();
+            
         }
 
         private void họcPhầnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHocPhan f = new frmHocPhan();
-            f.ShowDialog();
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -190,8 +179,34 @@ namespace QuanLySinhVien
             frmRePortGiaoVien f = new frmRePortGiaoVien();
             f.ShowDialog();
         }
+
         #endregion
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void giáoViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GiaoVien.frmGiaoVien frmgiaovien = new GiaoVien.frmGiaoVien();
+            frmgiaovien.ShowDialog();
+        }
+
+        private void họcPhầnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmHocPhan f = new frmHocPhan();
+            f.ShowDialog();
+        }
+        private void lớpHọcPhầnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLySinhVien.UI.frmLopHocPhann f = new UI.frmLopHocPhann();
+            f.ShowDialog();
+        }
+        private void sinhViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SinhVien.frmSinhVien frmsinhvien = new SinhVien.frmSinhVien();
+            frmsinhvien.ShowDialog();
+        }
     }
 }

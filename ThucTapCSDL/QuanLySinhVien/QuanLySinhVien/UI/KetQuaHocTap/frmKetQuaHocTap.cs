@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QuanLySinhVien.UI.KetQuaHocTap;
 
 namespace QuanLySinhVien.KetQuaHocTap
 {
@@ -29,11 +30,7 @@ namespace QuanLySinhVien.KetQuaHocTap
             //comboBox2.Items.Add("Học kỳ 1");
             //comboBox2.Items.Add("Học kỳ 2");
             //namhoc
-            String sqlSELECT = "select Nam_hoc from Hoc_ky";
-            SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong SQL
-            SqlDataAdapter da = new SqlDataAdapter(com); //vận chuyển dữ liệu
-            DataTable dt = new DataTable();//tạo 1 bảng ảo
-            da.Fill(dt); //đổ dữ liệu vào bảng ảo
+            
             //foreach (DataRow dr in dt.Rows)
             //{
             //    comboBox1.Items.Add(dr["Nam_hoc"].ToString());
@@ -41,17 +38,19 @@ namespace QuanLySinhVien.KetQuaHocTap
         }
         public void getdata()
         {
-            String sqlSELECT = "SELECT * FROM Bang_diem";
+            String sqlSELECT = "SELECT * FROM chitiet_sv";
             SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong SQL
             SqlDataAdapter da = new SqlDataAdapter(com); //vận chuyển dữ liệu
             DataTable dt = new DataTable();//tạo 1 bảng ảo
             da.Fill(dt); //đổ dữ liệu vào bảng ảo
-            dataGridView1.DataSource = dt;
+            DataRow dr = dt.Rows[0];
+            txtMaSinhVien.Text = dr["Ma_sinh_vien"].ToString();
         }
 
         private void frmKetQuaHocTap_Load(object sender, EventArgs e)
         {
             connect();
+            getdata();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -80,6 +79,12 @@ namespace QuanLySinhVien.KetQuaHocTap
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmDiem frmDiem = new frmDiem();
+            frmDiem.ShowDialog();
         }
     }
 }

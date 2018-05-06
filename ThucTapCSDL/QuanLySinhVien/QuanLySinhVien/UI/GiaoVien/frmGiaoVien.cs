@@ -22,5 +22,15 @@ namespace QuanLySinhVien.GiaoVien
             frmThemGiaoVien frmthemgiaovien = new frmThemGiaoVien();
             frmthemgiaovien.ShowDialog();
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
