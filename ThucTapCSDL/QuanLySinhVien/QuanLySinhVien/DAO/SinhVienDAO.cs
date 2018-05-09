@@ -1,5 +1,4 @@
-﻿using QuanLySinhVien.DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace QuanLySinhVien.DAO
 {
-    public class NamhocDAO
+    public class SinhVienDAO
     {
-        private static NamhocDAO instance;
+        private static SinhVienDAO instance;
 
-        public static NamhocDAO Instance
+        public static SinhVienDAO Instance
         {
             get
             {
-                if (instance == null) instance = new NamhocDAO(); return instance;
+                if (instance == null) instance = new SinhVienDAO(); return instance;
             }
 
             private set
@@ -26,17 +25,17 @@ namespace QuanLySinhVien.DAO
 
         }
 
-        private NamhocDAO() { }
+        private SinhVienDAO() { }
 
-        public List<NamHoc> GetListNamHoc()
+        List<DTO.SinhVien> GetListSinhVien()
         {
-            List<NamHoc> list = new List<NamHoc>();
+            List<DTO.SinhVien> list = new List<DTO.SinhVien>();
 
             DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM dbo.Namhoc");
 
             foreach (DataRow item in data.Rows)
             {
-                NamHoc namhoc = new NamHoc(item);
+                DTO.SinhVien namhoc = new DTO.SinhVien(item);
                 list.Add(namhoc);
             }
             return list;
