@@ -40,6 +40,10 @@
     <Reference Include="DevExpress.XtraBars.v16.1" />
     <Reference Include="DevExpress.Sparkline.v16.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,6 +75,12 @@
     <Compile Include="UI\frmBangdiem.Designer.cs">
       <DependentUpon>frmBangdiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\frmLopHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLopHocPhan.Designer.cs">
+      <DependentUpon>frmLopHocPhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="UI\frmBangdiem.resx">
       <DependentUpon>frmBangdiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLopHocPhan.resx">
+      <DependentUpon>frmLopHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

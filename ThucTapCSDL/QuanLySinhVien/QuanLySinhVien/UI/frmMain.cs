@@ -1,4 +1,5 @@
-﻿using QuanLySinhVien.UI.SinhVien;
+﻿using QuanLySinhVien.UI;
+using QuanLySinhVien.UI.SinhVien;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,12 @@ namespace QuanLySinhVien
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmSinhVien f = new frmSinhVien();
+            f.ShowDialog();
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmLopHocPhan f = new frmLopHocPhan();
             f.ShowDialog();
         }
     }
