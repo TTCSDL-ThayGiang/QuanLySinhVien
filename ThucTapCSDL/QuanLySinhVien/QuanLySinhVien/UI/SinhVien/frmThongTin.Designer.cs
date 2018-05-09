@@ -104,6 +104,7 @@
             this.btnSua.TabIndex = 14;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // txtMaSinhVien
             // 
@@ -218,7 +219,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDiem);
             this.Name = "frmThongTin";
-            this.Text = "frmThongTin";
+            this.Text = "Thông tin sinh viên";
             this.Load += new System.EventHandler(this.frmThongTin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

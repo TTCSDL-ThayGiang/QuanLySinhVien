@@ -28,7 +28,7 @@ namespace QuanLySinhVien.UI.KetQuaHocTap
         }
         public void getdata()
         {
-            String sqlSELECT = "SELECT * FROM Bang_diem";
+            String sqlSELECT = "SELECT * FROM diem_sv";
             SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong SQL
             SqlDataAdapter da = new SqlDataAdapter(com); //vận chuyển dữ liệu
             DataTable dt = new DataTable();//tạo 1 bảng ảo
@@ -49,7 +49,8 @@ namespace QuanLySinhVien.UI.KetQuaHocTap
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
+            KetQuaHocTap.frmThemDiem frmthemdiem = new KetQuaHocTap.frmThemDiem();
+            frmthemdiem.ShowDialog();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -84,6 +85,14 @@ namespace QuanLySinhVien.UI.KetQuaHocTap
             txtDiemChuyenCan.Text = dataGridView1.Rows[index].Cells[2].Value.ToString();
             txtDiemThuongXuyen.Text = dataGridView1.Rows[index].Cells[3].Value.ToString();
             txtDiemCuoiKy.Text = dataGridView1.Rows[index].Cells[4].Value.ToString();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            String sqlSELECT = "drop view diem_sv";
+            SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong 
+            com.ExecuteNonQuery();
+            this.Close();
         }
     }
 }

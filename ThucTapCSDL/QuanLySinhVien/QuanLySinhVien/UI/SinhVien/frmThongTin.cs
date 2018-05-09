@@ -14,6 +14,7 @@ namespace QuanLySinhVien.UI.SinhVien
 {
     public partial class frmThongTin : Form
     {
+        
         public static SqlConnection con;
         public frmThongTin()
         {
@@ -50,14 +51,10 @@ namespace QuanLySinhVien.UI.SinhVien
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            try
-            {
-                String sqlSELECT = "drop view chitiet_sv";
-                SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong 
-                com.ExecuteNonQuery();
-            }
-            catch(Exception ex) { }
-                this.Close();
+            String sqlSELECT = "drop view chitiet_sv";
+            SqlCommand com = new SqlCommand(sqlSELECT, con);//thực thi câu lệnh trong 
+            com.ExecuteNonQuery();
+            this.Close();
         }
 
         private void btnDiem_Click(object sender, EventArgs e)
@@ -65,6 +62,14 @@ namespace QuanLySinhVien.UI.SinhVien
             frmKetQuaHocTap frmketquahoctap = new frmKetQuaHocTap();
             frmketquahoctap.ShowDialog();
 
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            string sua = "UPDATE Sinh_vien set Ten_sinh_vien = N'" + txtHoTen.Text + "',Ngay_sinh = N'" + txtNgaySinh.Text + "',Gioi_tinh = N'" + cbbGioiTinh.Text + "',Dia_chi = '" + txtDiaChi.Text + "',Ma_lop='" + txtMaLop.Text + "' where Ma_sinh_vien = '" + txtMaSinhVien.Text + "' ";
+            SqlCommand comSua = new SqlCommand(sua, con);
+            comSua.ExecuteNonQuery();
+            getdata();
         }
     }
 }

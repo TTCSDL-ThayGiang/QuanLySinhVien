@@ -40,6 +40,7 @@
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnChiTiet = new System.Windows.Forms.Button();
             this.lblMaLop = new System.Windows.Forms.Label();
             this.txtMaLop = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -67,7 +68,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtTKHoTen = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnChiTiet = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -191,6 +192,16 @@
             this.groupBox1.Size = new System.Drawing.Size(462, 275);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
+            // 
+            // btnChiTiet
+            // 
+            this.btnChiTiet.Location = new System.Drawing.Point(354, 246);
+            this.btnChiTiet.Name = "btnChiTiet";
+            this.btnChiTiet.Size = new System.Drawing.Size(75, 23);
+            this.btnChiTiet.TabIndex = 18;
+            this.btnChiTiet.Text = "Chi tiết";
+            this.btnChiTiet.UseVisualStyleBackColor = true;
+            this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
             // 
             // lblMaLop
             // 
@@ -443,26 +454,27 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "Họ tên";
             // 
-            // btnChiTiet
+            // btnThoat
             // 
-            this.btnChiTiet.Location = new System.Drawing.Point(354, 246);
-            this.btnChiTiet.Name = "btnChiTiet";
-            this.btnChiTiet.Size = new System.Drawing.Size(75, 23);
-            this.btnChiTiet.TabIndex = 18;
-            this.btnChiTiet.Text = "Chi tiết";
-            this.btnChiTiet.UseVisualStyleBackColor = true;
-            this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
+            this.btnThoat.Location = new System.Drawing.Point(705, 482);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 19;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 487);
+            this.ClientSize = new System.Drawing.Size(874, 517);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmSinhVien";
-            this.Text = " ";
+            this.Text = " Sinh viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmSinhVien_Load);
             this.groupBox1.ResumeLayout(false);
@@ -516,5 +528,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Dia_chi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma_lop;
         private System.Windows.Forms.Button btnChiTiet;
+        private System.Windows.Forms.Button btnThoat;
     }
 }

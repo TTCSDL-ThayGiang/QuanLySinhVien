@@ -22,7 +22,6 @@ namespace QuanLySinhVien.SinhVien
         private void connect()
         {
             String cn = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";//;Integrated Security = false
-            
             con = new SqlConnection(cn);
             con.Open();
             
@@ -108,6 +107,11 @@ namespace QuanLySinhVien.SinhVien
             com.ExecuteNonQuery();
             frmThongTin frmthongtin = new frmThongTin();
             frmthongtin.ShowDialog();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

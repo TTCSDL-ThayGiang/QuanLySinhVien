@@ -83,8 +83,16 @@ namespace QuanLySinhVien.KetQuaHocTap
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string sqlSELECT = "create view diem_sv as select * from Bang_diem where Ma_sinh_vien = '"+txtMaSinhVien.Text+"'";
+            SqlCommand com = new SqlCommand(sqlSELECT, con);
+            com.ExecuteNonQuery();
             frmDiem frmDiem = new frmDiem();
             frmDiem.ShowDialog();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
