@@ -52,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\GiaoVienDAO.cs" />
+    <Compile Include="DAO\HocPhanDAO.cs" />
+    <Compile Include="DAO\KyHocDAO.cs" />
+    <Compile Include="DAO\LopHocPhanDAO.cs" />
+    <Compile Include="DAO\NamhocDAO.cs" />
+    <Compile Include="DTO\GiaoVien.cs" />
+    <Compile Include="DTO\HocPhan.cs" />
+    <Compile Include="DTO\Kyhoc.cs" />
+    <Compile Include="DTO\LopHocPhan.cs" />
+    <Compile Include="DTO\NamHoc.cs" />
+    <Compile Include="DTO\SinhVien.cs" />
     <Compile Include="frmBangdiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +132,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="image\avatar.jpg" />
   </ItemGroup>
