@@ -1,0 +1,10 @@
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.exe.config
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.exe
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.pdb
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.csprojResolveAssemblyReference.cache
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmLogin.resources
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.frmMain.resources
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.Properties.Resources.resources
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.csproj.GenerateResource.Cache
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.exe
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.pdb
