@@ -8,3 +8,6 @@ D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysi
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.csproj.GenerateResource.Cache
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.exe
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\Quanlysinhvien-v\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.pdb
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.exe.config
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.exe
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.pdb
