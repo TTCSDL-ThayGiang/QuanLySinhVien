@@ -39,6 +39,7 @@ namespace Quanlysinhvien_v.GUI.SinhVien
             txtNgaySinh.Text = dr["Ngay_sinh"].ToString();
             cbbGioiTinh.Text = dr["Gioi_tinh"].ToString();
             txtDiaChi.Text = dr["Dia_chi"].ToString();
+            txtMaLop.Text = dr["Ma_lop"].ToString();
         }
 
         private void btnDiem_Click(object sender, EventArgs e)
