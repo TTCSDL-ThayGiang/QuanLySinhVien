@@ -63,6 +63,26 @@ namespace Quanlysinhvien_v.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _02_1User_Outline {
+            get {
+                object obj = ResourceManager.GetObject("02-1User-Outline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _02_1User_Outline1 {
+            get {
+                object obj = ResourceManager.GetObject("02-1User-Outline1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Close_icon {
             get {
                 object obj = ResourceManager.GetObject("Button-Close-icon", resourceCulture);
