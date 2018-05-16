@@ -1,0 +1,4 @@
+﻿1.xem thong tin cá nhân
+2. thêm sửa xóa tài khoản
+3. phân 3 lớp: admin/giáo viên/học sinh
+4. làm lại chức năng login

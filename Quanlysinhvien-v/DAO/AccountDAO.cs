@@ -48,5 +48,42 @@ namespace Quanlysinhvien_v.DAO
             }
             return null;
         }
+
+        public DataTable GetListAccount()
+        {
+            return DataProvider.Instance.ExcuteQuery("GetListAccount");
+        }
+        public bool UpdateAccount(string userName, string pass, string newPass)
+        {
+
+            int result = DataProvider.Instance.ExcuteNonQuery("UpdateAccount @username , @passWord , @newpassWord",new object[] { userName,pass,newPass});
+
+            return result > 0;
+        }
+
+        public bool InsertAccount(string userName, int type)
+        {
+            string query = string.Format("INSERT dbo.Account (UserName, Type) VALUES(N'{0}',{1})",userName,type);
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query);
+
+            return result>0;
+        }
+
+        public bool UpdateAccount(string userName, int type)
+        {
+            string query = string.Format("UPDATE dbo.Account SET Type={0} WHERE UserName=N'{1}'",type,userName);
+
+            int result = DataProvider.Instance.ExcuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool DeleteAccount(string userName)
+        {
+            string query = string.Format("Delete dbo.Account where UserName=N'{0}'", userName);
+
+            return false;
+        }
     }
 }

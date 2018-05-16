@@ -43,21 +43,32 @@ namespace Quanlysinhvien_v
         void ChangeAccount(int type)
         {
             //admin type=1
-            adminToolStripMenuItem.Enabled = type == 1;
-            thongtinToolStripMenuItem.Enabled = type == 1;
+            if (type == 1)
+            {               
+                lblTypeChu.Text = "";
+                lblTypeChu.Text = "Admin";
+            }           
             //giaovien type=2
-            if(type==1 || type == 2)
+            if(type == 2)
             {
-                giáoViênToolStripMenuItem2.Enabled = true;
+                lblTypeChu.Text = "";
+                lblTypeChu.Text = "Giáo viên";
                 sinhvieenToolStripMenuItem.Enabled = false;
+                adminToolStripMenuItem.Enabled = false;
+                thongtinToolStripMenuItem.Enabled = false;
             }
             //sinhvien type=3
-            if (type == 1 || type == 3)
+            if (type == 3)
             {
+                lblTypeChu.Text = "";
+                lblTypeChu.Text = "Sinh viên";
                 giáoViênToolStripMenuItem2.Enabled = false;
-                sinhvieenToolStripMenuItem.Enabled = true;
+                adminToolStripMenuItem.Enabled = false;
+                thongtinToolStripMenuItem.Enabled = false;
             }
         }
+
+        
 
         #endregion
 
@@ -69,14 +80,21 @@ namespace Quanlysinhvien_v
 
         private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmThongtintaikhoan f = new frmThongtintaikhoan();
-            f.ShowDialog();
+            frmThongtintaikhoan f = new frmThongtintaikhoan(LoginAccount);
+            f.Show();
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyTaiKhoan f = new frmQuanLyTaiKhoan();
+            f.ShowDialog();
+        }
+
         #endregion
 
 
