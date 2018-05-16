@@ -46,7 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\GiaoVienDAO.cs" />
+    <Compile Include="DAO\HocPhanDAO.cs" />
+    <Compile Include="DAO\KyHocDAO.cs" />
+    <Compile Include="DAO\LopHocPhanDAO.cs" />
+    <Compile Include="DAO\NamhocDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\GiaoVien.cs" />
+    <Compile Include="DTO\HocPhan.cs" />
+    <Compile Include="DTO\Kyhoc.cs" />
+    <Compile Include="DTO\LopHocPhan.cs" />
+    <Compile Include="DTO\NamHoc.cs" />
     <Compile Include="GUI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +71,12 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongtintaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongtintaikhoan.Designer.cs">
+      <DependentUpon>frmThongtintaikhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmLogin.resx">
@@ -66,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongtintaikhoan.resx">
+      <DependentUpon>frmThongtintaikhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,9 +111,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\twitter-icon.png" />
   </ItemGroup>

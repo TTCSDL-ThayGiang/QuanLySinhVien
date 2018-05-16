@@ -1,0 +1,9 @@
+CREATE TABLE Account 
+(
+	id INT IDENTITY PRIMARY KEY,
+	DisplayName NVARCHAR(100) NOT NULL,
+	UserName NVARCHAR(100) NOT NULL,
+	PassWord NVARCHAR(100) NOT NULL,
+	Type INT NOT NULL,--1/admin	2/giaovien 3/hocsinh
+)
+go
