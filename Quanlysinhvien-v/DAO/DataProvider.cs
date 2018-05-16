@@ -30,8 +30,9 @@ namespace QuanLySinhVien.DAO
         public DataTable ExcuteQuery(string query, object[] paramater = null)
         {
             DataTable data = new DataTable();
-
-            string connectionStr = @"Data Source=ADMIN\TC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";
+            // @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true"
+            // @"Data Source=ADMIN\TC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True"
+            string connectionStr = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";
 
             SqlConnection connection = new SqlConnection(connectionStr);
 
@@ -63,8 +64,9 @@ namespace QuanLySinhVien.DAO
         public int ExcuteNonQuery(string query, object[] paramater = null)
         {
             int data = 0;
-
-            string connectionStr = @"Data Source=ADMIN\TC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";
+            // @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true"
+            // @"Data Source=ADMIN\TC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True"
+            string connectionStr = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";
 
             SqlConnection connection = new SqlConnection(connectionStr);
 
@@ -98,7 +100,9 @@ namespace QuanLySinhVien.DAO
         public object ExcuteScala(string query, object[] paramater = null)
         {
             object data = 0;
-            string connectionStr = @"Data Source=ADMIN\TC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True";
+            // @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true"
+            // @"Data Source=ADMIN\TC;Initial Catalog=Quan_ly_sinh_vien;Integrated Security=True"
+            string connectionStr = @"server ='DUC-PC\SQLEXPRESS' ;database ='Quan_ly_sinh_vien' ;Integrated Security = true";
 
             using (SqlConnection connection = new SqlConnection(connectionStr))
             {

@@ -100,6 +100,7 @@
             this.btnThoat.TabIndex = 23;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnThem
             // 
@@ -109,6 +110,7 @@
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtMaSinhVien
             // 
@@ -205,6 +207,7 @@
             this.MinimizeBox = false;
             this.Name = "frmThemSinhVien";
             this.Text = "frmThemSinhVien";
+            this.Load += new System.EventHandler(this.frmThemSinhVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

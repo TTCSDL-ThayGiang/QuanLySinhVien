@@ -164,6 +164,7 @@
             this.btnTimKiem.TabIndex = 30;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // label12
             // 
@@ -292,6 +293,7 @@
             this.btnChiTiet.TabIndex = 18;
             this.btnChiTiet.Text = "Chi tiết";
             this.btnChiTiet.UseVisualStyleBackColor = true;
+            this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
             // 
             // lblMaLop
             // 
@@ -317,6 +319,7 @@
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label1
             // 
@@ -336,6 +339,7 @@
             this.btnSua.TabIndex = 14;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -345,6 +349,7 @@
             this.btnThem.TabIndex = 13;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtMaSinhVien
             // 
@@ -455,6 +460,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(831, 182);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // frmSinhVien
             // 
@@ -467,7 +473,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmSinhVien";
-            this.Text = "Sinh Viên";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.frmSinhVien_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

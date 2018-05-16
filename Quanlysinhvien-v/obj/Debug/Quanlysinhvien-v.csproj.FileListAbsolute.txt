@@ -19,3 +19,17 @@ D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinh
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.Properties.Resources.resources
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.csproj.GenerateResource.Cache
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmThongtintaikhoan.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.exe.config
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.exe
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.pdb
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.exe
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\bin\Debug\Quanlysinhvien-v.pdb
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.csprojResolveAssemblyReference.cache
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmLogin.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.frmMain.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmThongtintaikhoan.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.SinhVien.frmSinhVien.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.SinhVien.frmThemSinhVien.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.SinhVien.frmThongTin.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.Properties.Resources.resources
+C:\Users\DUC\Downloads\mta\Nam 3\Ky 2\TTCSDL\BTL\TTCSDL_QuanLySinhVien\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien-v.csproj.GenerateResource.Cache
