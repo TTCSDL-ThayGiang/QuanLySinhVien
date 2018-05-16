@@ -164,8 +164,12 @@ namespace Quanlysinhvien_v.GUI
 
             cboTypeName.SelectedIndex = index;
         }
+
         #endregion
 
+        private void frmQuanLyTaiKhoan_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
