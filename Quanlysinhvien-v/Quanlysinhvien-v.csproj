@@ -67,6 +67,7 @@
     <Compile Include="DTO\Kyhoc.cs" />
     <Compile Include="DTO\LopHocPhan.cs" />
     <Compile Include="DTO\NamHoc.cs" />
+    <Compile Include="DTO\TypeNameAcc.cs" />
     <Compile Include="GUI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +112,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="vkGroupBox2Cham0.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <EmbeddedResource Include="GUI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

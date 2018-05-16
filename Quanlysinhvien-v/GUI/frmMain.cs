@@ -92,7 +92,7 @@ namespace Quanlysinhvien_v
         private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmQuanLyTaiKhoan f = new frmQuanLyTaiKhoan();
-            f.ShowDialog();
+            f.Show();
         }
 
         #endregion

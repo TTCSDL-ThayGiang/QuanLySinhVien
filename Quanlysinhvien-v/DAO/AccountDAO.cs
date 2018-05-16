@@ -85,5 +85,50 @@ namespace Quanlysinhvien_v.DAO
 
             return false;
         }
+
+        public bool KiemTraTaiKhoanTrung(string userName)
+        {
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM dbo.Account");
+
+            foreach (DataRow item in data.Rows)
+            {
+                Account acc = new Account(item);
+
+                if (acc.UserName == userName) return true;
+            }
+            return false;
+        }
+
+        public List<TypeNameAcc> GetListTypeName()
+        {
+            List<TypeNameAcc> list = new List<TypeNameAcc>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT Typename FROM dbo.AccountType");
+
+            foreach (DataRow item in data.Rows)
+            {
+                TypeNameAcc type = new TypeNameAcc(item);
+                list.Add(type);
+            }
+            return list;
+        }
+
+        public TypeNameAcc GetTypeNamebyuserName(string userName)
+        {
+            TypeNameAcc typename = null;
+
+            List<TypeNameAcc> list = new List<TypeNameAcc>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT b.UserName,a.Typename FROM dbo.AccountType a, dbo.Account b WHERE a.typeid = b.Type AND b.UserName = N'" + userName+"'");
+
+            foreach (DataRow item in data.Rows)
+            {
+                typename = new TypeNameAcc(item);
+                return typename;
+            }
+            
+
+            return typename;
+        }
     }
 }

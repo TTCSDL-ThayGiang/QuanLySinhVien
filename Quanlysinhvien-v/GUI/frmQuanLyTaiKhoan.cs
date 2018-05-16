@@ -1,4 +1,5 @@
 ﻿using Quanlysinhvien_v.DAO;
+using Quanlysinhvien_v.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,7 @@ namespace Quanlysinhvien_v.GUI
         {
             dtgvAccount.DataSource = accountList;
             LoadAccount();
+            LoadTypeNameintoCombobox(cboTypeName);
             AddAccountBinding();
         }
 
@@ -41,6 +43,12 @@ namespace Quanlysinhvien_v.GUI
         }
 
         #region Method
+
+        void LoadTypeNameintoCombobox(ComboBox cb)
+        {
+            cb.DataSource = AccountDAO.Instance.GetListTypeName();
+            cb.DisplayMember = "TypeNamee";
+        }
 
         void AddAccount(string userName, int type)
         {
@@ -80,6 +88,10 @@ namespace Quanlysinhvien_v.GUI
             LoadAccount();
         }
         
+        bool Kiemtrataikhoantrung(string userName)
+        {
+            return AccountDAO.Instance.KiemTraTaiKhoanTrung(userName);
+        }
 
         #endregion
         #region Event
@@ -89,15 +101,28 @@ namespace Quanlysinhvien_v.GUI
             string userName = txtUsername.Text;
             int type = (int)numericUpDown1.Value;
 
+            if(Kiemtrataikhoantrung(userName)==false)
             AddAccount(userName, type);
+            else
+            {
+                MessageBox.Show("Đã tồn tại tài khoản!");
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//btnsua
         {
             string userName = txtUsername.Text;
             int type = (int)numericUpDown1.Value;
 
-            EditAccount(userName, type);
+            if (Kiemtrataikhoantrung(userName)==false)
+            {             
+                EditAccount(userName, type);
+            }
+            else
+            {
+                MessageBox.Show("Đã tồn tại tài khoản!");
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)//delete
@@ -109,14 +134,38 @@ namespace Quanlysinhvien_v.GUI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            LoadAccount();
         }
 
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            string username = (string)dtgvAccount.SelectedCells[0].OwningRow.Cells["tên đăng nhập"].Value;
+
+            TypeNameAcc typename = AccountDAO.Instance.GetTypeNamebyuserName(username);
+
+            cboTypeName.SelectedItem = typename;
+
+            int index = -1;
+            int i = 0;
+            foreach (TypeNameAcc item in cboTypeName.Items)
+            {
+                if (item.TypeNamee == typename.TypeNamee)
+                {
+                    index = i;
+                    break;
+                }
+                i++;
+            }
+
+            cboTypeName.SelectedIndex = index;
+        }
         #endregion
+
+
     }
 }
