@@ -58,16 +58,21 @@
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\GiaoVienDAO.cs" />
+    <Compile Include="DAO\HocKyDAO.cs" />
     <Compile Include="DAO\HocPhanDAO.cs" />
+    <Compile Include="DAO\KetQuaHocTapDAO.cs" />
     <Compile Include="DAO\KyHocDAO.cs" />
     <Compile Include="DAO\LopHocPhanDAO.cs" />
     <Compile Include="DAO\NamhocDAO.cs" />
+    <Compile Include="DAO\SinhVienDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\GiaoVien.cs" />
+    <Compile Include="DTO\HocKy.cs" />
     <Compile Include="DTO\HocPhan.cs" />
     <Compile Include="DTO\Kyhoc.cs" />
     <Compile Include="DTO\LopHocPhan.cs" />
     <Compile Include="DTO\NamHoc.cs" />
+    <Compile Include="DTO\SinhVien.cs" />
     <Compile Include="DTO\TypeNameAcc.cs" />
     <Compile Include="GUI\frmHocPhan.cs">
       <SubType>Form</SubType>
@@ -219,6 +224,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\Baocao\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
