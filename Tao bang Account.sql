@@ -1,32 +1,31 @@
-CREATE TABLE Account 
+﻿CREATE TABLE Account 
 (
-	
-	DisplayName NVARCHAR(100) NOT NULL,
 	UserName NVARCHAR(100) PRIMARY KEY ,
 	PassWord NVARCHAR(100) NOT NULL DEFAULT 0,
-	Type INT NOT NULL DEFAULT 3,--1/admin	2/giaovien 3/hocsinh
+	TypeAccount INT NOT NULL DEFAULT 3--1/admin	2/giaovien 3/hocsinh
+
+
 )
 GO
 
 INSERT INTO dbo.Account
-        ( DisplayName ,
-          UserName ,
+        ( UserName ,
           PassWord ,
           Type
         )
-VALUES  ( N'Admin' , -- DisplayName - nvarchar(100)
+VALUES  ( 
           N'Admin' , -- UserName - nvarchar(100)
           N'1' , -- PassWord - nvarchar(100)
           1  -- Type - int
         ) 
 
 INSERT INTO dbo.Account
-        ( DisplayName ,
+        ( 
           UserName ,
           PassWord ,
           Type
         )
-VALUES  ( N'TienChung' , -- DisplayName - nvarchar(100)
+VALUES  ( 
           N'TienChung' , -- UserName - nvarchar(100)
           N'1' , -- PassWord - nvarchar(100)
           3  -- Type - int
@@ -68,3 +67,30 @@ CREATE TABLE AccountType
 	name NVARCHAR(100),
 	typef INT NOT NULL
 )
+
+INSERT dbo.AccountType
+        ( Typename, typeid )
+VALUES  ( N'Admin', -- Typename - nvarchar(100)
+          1  -- typeid - int
+          )
+
+INSERT dbo.AccountType
+        ( Typename, typeid )
+VALUES  ( N'Giáo viên', -- Typename - nvarchar(100)
+          2  -- typeid - int
+          )
+INSERT dbo.AccountType
+        ( Typename, typeid )
+VALUES  ( N'Snh viên', -- Typename - nvarchar(100)
+          3  -- typeid - int
+          )
+
+
+ALTER PROC GetListAccount as
+BEGIN	
+	SELECT UserName [Tên đăng nhập], Typename [Kiểu tài khoản] FROM dbo.Account,dbo.AccountType
+	WHERE dbo.Account.Type=dbo.AccountType.typeid
+END	
+GO
+
+EXEC GetListAccount

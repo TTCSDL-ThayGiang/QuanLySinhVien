@@ -30,9 +30,9 @@ namespace Quanlysinhvien_v.GUI
 
         void AddAccountBinding()
         {
-            //txtUsername.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "userName", true, DataSourceUpdateMode.Never));
+            txtUsername.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "tên đăng nhập", true, DataSourceUpdateMode.Never));
             //numericUpDown1.DataBindings.Add(new Binding("Value", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
-
+            
         }
 
         void LoadAccount()
