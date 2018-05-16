@@ -47,3 +47,6 @@ D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinh
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.SinhVien.frmThemSinhVien.resources
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.SinhVien.frmThongTin.resources
 D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmQuanLyTaiKhoan.resources
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmLopHocPhan.resources
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\QuanLySinhVien.UI.frmHocPhan.resources
+D:\1ME\1Codeme\4. CodeThucTapCoSoDuLieu_NguyenVanGiang\QuanLySinhVien\Quanlysinhvien-v\obj\Debug\Quanlysinhvien_v.GUI.frmKetQuaHocTap.resources

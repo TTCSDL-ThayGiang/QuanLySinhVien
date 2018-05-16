@@ -16,10 +16,12 @@ namespace QuanLySinhVien.DTO
 
         public HocPhan(DataRow row)
         {
+
             this.MaHocPhan = (string)row["Ma_hoc_phan"];
             this.TenHocPhan = (string)row["Ten_hoc_phan"];
             this.SoTinChi = (int)row["So_tin_chi"];
             this.MaHocKy = (string)row["Ma_hoc_ky"];
+
         }
 
         public string MaHocPhan

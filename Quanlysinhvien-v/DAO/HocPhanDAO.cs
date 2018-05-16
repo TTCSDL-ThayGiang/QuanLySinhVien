@@ -57,6 +57,21 @@ namespace QuanLySinhVien.DAO
             return hocphan;
         }
 
+        public HocPhan GetHocPhanByHocPhanid(string id)
+        {
+            HocPhan hocphan = null;
+
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM dbo.Hoc_phan WHERE Ma_hoc_phan= " + id);
+
+            foreach (DataRow item in data.Rows)
+            {
+                hocphan = new HocPhan(item);
+                break;
+            }
+
+            return hocphan;
+        }
+
         public List<HocPhan> SeachHocPhanByName(string name)
         {
             List<HocPhan> list = new List<HocPhan>();
@@ -72,6 +87,8 @@ namespace QuanLySinhVien.DAO
             }
             return list;
         }
+
+
     }
 }
     

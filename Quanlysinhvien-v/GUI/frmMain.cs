@@ -1,4 +1,5 @@
-﻿using Quanlysinhvien_v.DTO;
+﻿using QuanLySinhVien.UI;
+using Quanlysinhvien_v.DTO;
 using Quanlysinhvien_v.GUI;
 using System;
 using System.Collections.Generic;
@@ -47,6 +48,7 @@ namespace Quanlysinhvien_v
             {               
                 lblTypeChu.Text = "";
                 lblTypeChu.Text = "Admin";
+                kếtQuảHọcTậpToolStripMenuItem.Enabled = false;
             }           
             //giaovien type=2
             if(type == 2)
@@ -95,8 +97,40 @@ namespace Quanlysinhvien_v
             f.Show();
         }
 
+
         #endregion
 
+        private void lớpHọcPhầnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void thôngTinSinhViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thongtinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lớpHọcPhầnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmLopHocPhan f = new frmLopHocPhan();
+            f.ShowDialog();
+        }
+
+        private void họcPhầnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmHocPhan f = new frmHocPhan();
+            f.ShowDialog();
+        }
+
+        private void kếtQuảHọcTậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmKetQuaHocTap f = new frmKetQuaHocTap(LoginAccount);
+            f.ShowDialog();
+        }
     }
 }

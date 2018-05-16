@@ -22,7 +22,7 @@ namespace Quanlysinhvien_v.GUI
             Load();
         }
 
-        void Load()
+        public new void Load()
         {
             dtgvAccount.DataSource = accountList;
             LoadAccount();
