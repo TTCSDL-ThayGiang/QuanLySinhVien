@@ -1,0 +1,5 @@
+﻿1.xem thong tin tài khoản
+2. quản lý tài khoản
+3. phân 3 lớp: admin/giáo viên/học sinh
+4. làm lại chức năng login
+5. Kết quả học tập
