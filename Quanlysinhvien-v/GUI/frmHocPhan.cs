@@ -51,6 +51,55 @@ namespace QuanLySinhVien.UI
             return listHocPhan;
         }
 
+        private string CheckChuoi(string Str)
+        {
+            string[] arr = Str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            Str = string.Join(" ", arr);
+            return Str;
+        }
+
+        void AddHocPhan(string userName, int type)
+        {
+            if (AccountDAO.Instance.InsertAccount(userName, type))
+            {
+                MessageBox.Show("Thêm tài khoản thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Thêm tài khoản thất bại!");
+            }
+            LoadData();
+        }
+        void EditHocPhan(string userName, int type)
+        {
+            if (AccountDAO.Instance.UpdateAccount(userName, type))
+            {
+                MessageBox.Show("Cập nhật tài khoản thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật tài khoản thất bại!");
+            }
+            LoadData();
+        }
+
+        void DeleteHocPhan(string userName)
+        {
+            if (AccountDAO.Instance.DeleteAccount(userName))
+            {
+                MessageBox.Show("Xóa tài khoản thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Xóa tài khoản thất bại!");
+            }
+            LoadData();
+        }
+        #endregion
+
+        #region event
+
+        #endregion
         private void txtSeach_TextChanged(object sender, EventArgs e)
         {
 
@@ -58,12 +107,12 @@ namespace QuanLySinhVien.UI
 
         private void txtSeach_Click(object sender, EventArgs e)
         {
-
+            HocPhanList.DataSource= SeachHocPhanBytext(CheckChuoi(txtSeach.Text));
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtgvHocPhan.DataSource = SeachHocPhanBytext(txtSeach.Text);
+            
         }
 
         private void btnTailai_Click(object sender, EventArgs e)
@@ -71,7 +120,7 @@ namespace QuanLySinhVien.UI
             LoadData();
         }
 
-        #endregion
+        
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -96,6 +145,21 @@ namespace QuanLySinhVien.UI
         private void btnThoat_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)//btn tim
+        {
+            dtgvHocPhan.DataSource = SeachHocPhanBytext(txtSeach.Text);
+        }
+
+        private void btnTailai_Click_1(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

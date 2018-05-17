@@ -57,7 +57,7 @@ namespace Quanlysinhvien_v
                 lblTypeChu.Text = "Giáo viên";
                 sinhvieenToolStripMenuItem.Enabled = false;
                 adminToolStripMenuItem.Enabled = false;
-                thongtinToolStripMenuItem.Enabled = false;
+
             }
             //sinhvien type=3
             if (type == 3)
@@ -66,7 +66,6 @@ namespace Quanlysinhvien_v
                 lblTypeChu.Text = "Sinh viên";
                 giáoViênToolStripMenuItem2.Enabled = false;
                 adminToolStripMenuItem.Enabled = false;
-                thongtinToolStripMenuItem.Enabled = false;
             }
         }
 

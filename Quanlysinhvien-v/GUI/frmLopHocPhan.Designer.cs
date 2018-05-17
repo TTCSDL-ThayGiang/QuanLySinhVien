@@ -69,10 +69,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.cbotenhocphanseash = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnTimkiem = new System.Windows.Forms.Button();
+            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -184,7 +184,7 @@
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageKey = "(none)";
-            this.button1.Location = new System.Drawing.Point(717, 3);
+            this.button1.Location = new System.Drawing.Point(489, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 26);
             this.button1.TabIndex = 4;
@@ -212,8 +212,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnThoat);
+            this.panel1.Controls.Add(this.btnTaiLai);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
@@ -228,7 +228,7 @@
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ImageKey = "(none)";
-            this.btnThoat.Location = new System.Drawing.Point(521, 3);
+            this.btnThoat.Location = new System.Drawing.Point(717, 0);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 26);
             this.btnThoat.TabIndex = 3;
@@ -304,9 +304,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvLopHocPhan);
-            this.groupBox2.Location = new System.Drawing.Point(11, 289);
+            this.groupBox2.Location = new System.Drawing.Point(11, 298);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(802, 255);
+            this.groupBox2.Size = new System.Drawing.Size(802, 246);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách";
@@ -318,7 +318,7 @@
             this.dgvLopHocPhan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLopHocPhan.Location = new System.Drawing.Point(3, 16);
             this.dgvLopHocPhan.Name = "dgvLopHocPhan";
-            this.dgvLopHocPhan.Size = new System.Drawing.Size(796, 236);
+            this.dgvLopHocPhan.Size = new System.Drawing.Size(796, 227);
             this.dgvLopHocPhan.TabIndex = 0;
             // 
             // cboTenGiaoVien
@@ -433,7 +433,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 263);
+            this.textBox1.Location = new System.Drawing.Point(92, 270);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(20, 20);
@@ -444,7 +444,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.button7.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button7.Location = new System.Drawing.Point(52, 262);
+            this.button7.Location = new System.Drawing.Point(52, 269);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(32, 22);
             this.button7.TabIndex = 20;
@@ -455,7 +455,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.button6.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button6.Location = new System.Drawing.Point(120, 262);
+            this.button6.Location = new System.Drawing.Point(120, 269);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(32, 22);
             this.button6.TabIndex = 22;
@@ -466,7 +466,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.button5.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button5.Location = new System.Drawing.Point(160, 262);
+            this.button5.Location = new System.Drawing.Point(160, 269);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(32, 22);
             this.button5.TabIndex = 23;
@@ -477,7 +477,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.button4.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button4.Location = new System.Drawing.Point(12, 262);
+            this.button4.Location = new System.Drawing.Point(12, 269);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(32, 22);
             this.button4.TabIndex = 19;
@@ -487,40 +487,24 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.cbotenhocphanseash);
-            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.txtSearch);
             this.groupBox3.Controls.Add(this.btnTimkiem);
-            this.groupBox3.Location = new System.Drawing.Point(241, 254);
+            this.groupBox3.Location = new System.Drawing.Point(220, 254);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(569, 38);
+            this.groupBox3.Size = new System.Drawing.Size(590, 48);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
             // 
-            // textBox2
+            // txtSearch
             // 
-            this.textBox2.Location = new System.Drawing.Point(299, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 20);
-            this.textBox2.TabIndex = 25;
-            // 
-            // cbotenhocphanseash
-            // 
-            this.cbotenhocphanseash.FormattingEnabled = true;
-            this.cbotenhocphanseash.Location = new System.Drawing.Point(113, 13);
-            this.cbotenhocphanseash.Name = "cbotenhocphanseash";
-            this.cbotenhocphanseash.Size = new System.Drawing.Size(172, 21);
-            this.cbotenhocphanseash.TabIndex = 26;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(12, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 13);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Tên học phần:";
+            this.txtSearch.Location = new System.Drawing.Point(89, 16);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(313, 20);
+            this.txtSearch.TabIndex = 25;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnTimkiem
             // 
@@ -528,15 +512,40 @@
             this.btnTimkiem.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimkiem.ImageKey = "(none)";
-            this.btnTimkiem.Location = new System.Drawing.Point(490, 10);
+            this.btnTimkiem.Location = new System.Drawing.Point(408, 12);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(75, 26);
             this.btnTimkiem.TabIndex = 5;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = false;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // btnTaiLai
+            // 
+            this.btnTaiLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnTaiLai.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnTaiLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiLai.ImageKey = "(none)";
+            this.btnTaiLai.Location = new System.Drawing.Point(521, 2);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(75, 26);
+            this.btnTaiLai.TabIndex = 27;
+            this.btnTaiLai.Text = "Tải lại";
+            this.btnTaiLai.UseVisualStyleBackColor = false;
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 19);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(66, 13);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Nội dung tìm";
             // 
             // frmLopHocPhan
             // 
+            this.AcceptButton = this.btnTimkiem;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
@@ -611,9 +620,9 @@
         private System.Windows.Forms.TextBox txtMaGiaoVien;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox cbotenhocphanseash;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnTimkiem;
+        private System.Windows.Forms.Button btnTaiLai;
+        private System.Windows.Forms.Label label15;
     }
 }

@@ -111,7 +111,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(247, 20);
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Text = "sv1";
+            this.txtUsername.Text = "admin";
             // 
             // lblPassword
             // 

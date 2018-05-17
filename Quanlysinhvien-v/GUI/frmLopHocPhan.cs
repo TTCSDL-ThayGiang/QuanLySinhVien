@@ -14,14 +14,18 @@ namespace Quanlysinhvien_v.GUI
 {
     public partial class frmLopHocPhan : Form
     {
-
+        BindingSource LopHocPhanList = new BindingSource();
         public frmLopHocPhan()
         {
             InitializeComponent();
             LoadLopHocPhan();
             LoadDataIntoCombobox();
             DataBinding();
+
         }
+
+
+
         private void DataBinding()
         {
 
@@ -46,8 +50,10 @@ namespace Quanlysinhvien_v.GUI
 
         private void LoadLopHocPhan()
         {
-            dgvLopHocPhan.DataSource = LopHocPhanDAO.Instance.GetListLopHocPhan();
+            dgvLopHocPhan.DataSource = LopHocPhanList;
+            LopHocPhanList.DataSource = LopHocPhanDAO.Instance.GetListLopHocPhan();
         }
+
 
         private void LoadDataIntoCombobox()
         {
@@ -63,8 +69,6 @@ namespace Quanlysinhvien_v.GUI
             List<HocPhan> listHocPhan = HocPhanDAO.Instance.GetListHocPhan();
             cboTenHocPhan.DataSource = listHocPhan;
             cboTenHocPhan.DisplayMember = "TenHocPhan";
-            cbotenhocphanseash.DataSource = listHocPhan;
-            cbotenhocphanseash.DisplayMember = "TenHocPhan";
 
             List<GiaoVien> listGiaoVien = GiaoVienDAO.Instance.GetListGiaoVien();
             cboTenGiaoVien.DataSource = listGiaoVien;
@@ -79,6 +83,12 @@ namespace Quanlysinhvien_v.GUI
             return Str;
         }
 
+        List<LopHocPhan> SearchLopHocPhanbyName(string name)
+        {
+            List<LopHocPhan> listLopHocPhan = LopHocPhanDAO.Instance.SeachLopHocPhanByName(name);
+
+            return listLopHocPhan;
+        }
         #endregion
 
         #region Event
@@ -207,17 +217,17 @@ namespace Quanlysinhvien_v.GUI
 
         private void txtMalop_TextChanged_1(object sender, EventArgs e)
         {
-            //string id = (string)dgvLopHocPhan.SelectedCells[0].OwningRow.Cells["malophocphan"].Value;
+            //string id = (string)dgvlophocphan.selectedcells[0].owningrow.cells["malophocphan"].value;
 
-            //HocPhan hocphan = HocPhanDAO.Instance.GetHocPhanByHocPhanid(id);
+            //hocphan hocphan = hocphandao.instance.gethocphanbyhocphanid(id);
 
-            //cboTenHocPhan.SelectedItem = hocphan;
+            //cbotenhocphan.selecteditem = hocphan;
 
             //int index = -1;
             //int i = 0;
-            //foreach (HocPhan item in cboTenHocPhan.Items)
+            //foreach (hocphan item in cbotenhocphan.items)
             //{
-            //    if (item.MaHocPhan == hocphan.MaHocPhan)
+            //    if (item.mahocphan == hocphan.mahocphan)
             //    {
             //        index = i;
             //        break;
@@ -225,7 +235,7 @@ namespace Quanlysinhvien_v.GUI
             //    i++;
             //}
 
-            //cboTenHocPhan.SelectedIndex = index;
+            //cbotenhocphan.selectedindex = index;
 
         }
 
@@ -237,6 +247,32 @@ namespace Quanlysinhvien_v.GUI
         private void frmLopHocPhan_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbotenhocphanseash_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {          
+            //LopHocPhanList.DataSource= SearchLopHocPhanbyName(CheckChuoi(txtSearch.Text));
+
+        }
+
+        private void chkTenhocphanSeach_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTaiLai_Click(object sender, EventArgs e)
+        {
+            LoadLopHocPhan();
         }
     }
 }

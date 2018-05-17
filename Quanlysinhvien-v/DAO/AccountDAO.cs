@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,6 +32,13 @@ namespace Quanlysinhvien_v.DAO
 
         public bool Login(string userName, string passWord)
         {
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes(passWord);
+            byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+
+            //var list = hasData.ToString();
+            //list.Reverse();
+            //hasData=list.
+            
             string query = "Login @username , @passWord";
 
             DataTable result = DataProvider.Instance.ExcuteQuery(query,new object[] {userName,passWord });

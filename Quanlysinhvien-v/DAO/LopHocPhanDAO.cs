@@ -70,6 +70,21 @@ namespace QuanLySinhVien.DAO
             return result > 0;
         }
 
-        
+        public List<LopHocPhan> SeachLopHocPhanByName(string name)
+        {
+            List<LopHocPhan> list = new List<LopHocPhan>();
+
+            string query = string.Format("SELECT*FROM dbo.Lop_hoc_phan WHERE Ma_lop_hoc_phan LIKE N'%{0}%'", name);
+
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                LopHocPhan lophocphan = new LopHocPhan(item);
+                list.Add(lophocphan);
+            }
+            return list;
+        }
+
     }
 }
